@@ -1,4 +1,4 @@
 # Stepper
 Markup III - Stepper. César Pérez
 
-![image](https://user-images.githubusercontent.com/113382985/192885773-9ea3b3ff-8c74-4955-8c25-8be86dd8ca13.png)
+![image](https://user-images.githubusercontent.com/113382985/192888293-21a664bc-1ca1-4ece-b47a-75885daa3b54.png)
