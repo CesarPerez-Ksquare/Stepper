@@ -21,7 +21,7 @@ body {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    background-color:#CFD2CF;
+    background-color:#EFEAD8;
     align-items: center;
     height: 10%;
     width: 70%;
@@ -34,7 +34,7 @@ body {
     justify-content: space-between;
     height: 65%;
     width: 100%;
-    background-color: #CFD2CF;
+    background-color: #EFEAD8;
 }
 
 .step {
@@ -89,6 +89,9 @@ body {
     color: rgb(20, 184, 166);
 }
 #current .stepLine {
+    color: rgb(79, 70, 229);
+}
+#unactive .stepLine {
     color: rgb(79, 70, 229);
 }
 
