@@ -1,0 +1,318 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(223, 224, 227);
+}
+
+.mainBox {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    border-radius: 1%;
+}
+
+.headerBox {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    background-color:#CFD2CF;
+    align-items: center;
+    height: 10%;
+    width: 70%;
+    margin: 2% 15% 0 15%;
+}
+
+.stepsBox {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    height: 65%;
+    width: 100%;
+    background-color: #CFD2CF;
+}
+
+.step {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+    margin: 0 1%;
+}
+
+.circleNumber {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 15%;
+    border-radius: 50%;
+    margin-right: 15%;
+    background-color: white;
+    color: rgb(79, 70, 229);
+}
+
+#completed .circleNumber {
+    background-color: rgb(20, 184, 166);
+    color: white;
+}
+
+#current .circleNumber {
+    background-color: rgb(79, 70, 229);
+    border-radius: 50%;
+    color: white;
+    margin-right: 15%;
+}
+
+.stepText {
+    font-weight: 400;
+    margin-right: 15%;
+}
+
+#completed .stepText {
+    color: rgb(20, 184, 166);
+}
+
+#current .stepText {
+    color: rgb(79, 70, 229);
+    margin-right: 15%;
+}
+
+.stepLine {
+    color: rgb(20, 184, 166);
+}
+#current .stepLine {
+    color: rgb(79, 70, 229);
+}
+
+#finalStep .stepText {
+    margin-right: none;
+    padding-right: none;
+    width: 10%;
+}
+
+.sectionBox {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 66%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.articleBox {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 20%;
+    width: 90%;
+    justify-content: space-around;
+}
+
+p {
+    color:rgb(48, 58, 75);
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    color: rgb(48, 58, 75);
+}
+
+.formsBox {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    height: 70%;
+    width: 90%;
+}
+
+.formsBox1 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    height: 100%;
+    width: 78%;
+}
+
+.formsBox2 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    height: 100%;
+    width: 20%;
+}
+
+fieldset {
+    border-style: none;
+    border-radius: 1%;
+    margin-top: 1%;
+}
+
+select {
+    width: 100%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    padding-left: 1%;
+    font-size: 18px;
+    color: rgb(48, 58, 75);
+    border-radius: 1%;
+}
+
+.formsBox2 select {
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 6.5%;
+    padding-left: 4%;
+    font-size: 20px;
+    color: rgb(48, 58, 75);
+    border-radius: 1%;
+}
+
+.formsBox2 legend {
+    color: rgb(48, 58, 75);
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 4.3%;
+}
+
+.formsBox2 fieldset {
+    border-style: none;
+    border-radius: 3.9%;
+    margin-top: 3%;
+}
+
+legend {
+    color: rgb(48, 58, 75);
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 1%;
+}
+
+.checkBox {
+    display: flex;
+    align-items: center;
+    height: 10%;
+    width: 90%;
+}
+/* Customize the label (the container) */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 1%;
+    cursor: pointer;
+    font-size: 18px;
+    color: rgb(48, 58, 75);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 20%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: rgb(79, 70, 229);
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+.footerBox {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    width: 90%;
+    margin: 0 5% 0 5%;
+}
+
+.buttonSpace1 {
+    height: 80%;
+    width: 10%;
+    margin-left: 5%;
+}
+
+.buttonSpace2 {
+    height: 80%;
+    width: 10%;
+    margin-right: 5%;
+}
+
+.Back {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    border-style: outset;
+    border-color: white;
+    list-style: none;
+    padding: 12% 35% 12% 35%;
+    font-size: 100%; 
+}
+
+.Continue {
+    background-color:rgb(79, 70, 229);
+    color: white;
+    border-radius: 10px;
+    border-style: outset;
+    border-color: white;
+    padding: 12% 23% 12% 23%;
+    font-size: 100%; 
+}
+
+
