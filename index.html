@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Linking CSS file -->
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <!-- Naming the website -->
+    <title>Stepper</title>
+
+</head>
+
+<body>
+    <div class="mainBox">
+        <div class="headerBox">
+            <div class="stepsBox">
+                <div class="step" id="completed">
+                    <h3 class="circleNumber">1</h3>    
+                    <h3 class="stepText">Cabin</h3>    
+                    <h3 class="stepLine">&#8212;&#8212;&#8212;&#8212;</h3>    
+                </div>
+                <div class="step" id="current">
+                    <h3 class="circleNumber">2</h3>    
+                    <h3 class="stepText">Meals</h3>    
+                    <h3 class="stepLine">- - - - - - -</h3>    
+                </div>
+                <div class="step" id="unactive">
+                    <h3 class="circleNumber">3</h3>    
+                    <h3 class="stepText">Upgrades</h3>    
+                    <h3 class="stepLine">- - - -</h3>    
+                </div>
+                <div class="step" id="finalStep">
+                    <h3 class="circleNumber">4</h3>    
+                    <h3 class="stepText">Payment</h3>    
+                </div>
+
+            </div>
+        </div>
+        <div class="sectionBox">
+            <div class="articleBox">
+                <h2>Meal preferences</h2>
+                <p>Your flight comes with breakfast, lunch, and dinner. Please make your selections below. </p>
+                <p>Changes to your order can be made up to 48 hourse before your flight.</p>
+            </div>
+            <div class="formsBox">
+                <div class="formsBox1">
+                    <fieldset>
+                        <legend><label for="breakfastLabel">Breakfast</label></legend>
+                        <div class="custom-select">
+                            <select id="breakfastLabel">
+                                <option value="optionBreakfast1">Sausage Egg Scramble Bowl</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend><label for="lunchLabel">Lunch</label></legend>
+                        <div class="custom-select">
+                            <select id="lunchLabel">
+                                <option value="optionLunch1">Club Sandwich Meal</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend><label for="dinnerLabel">Dinner</label></legend>
+                        <div class="custom-select">
+                            <select id="dinnerLabel">
+                                <option value="optionDinner1">Wagyu Beef Sliders Meal</option>
+                            </select>
+                        </div>  
+                    </fieldset>
+                </div>
+                <div class="formsBox2">
+                    <fieldset>
+                        <legend><label for="drinkBreakfastLabel">Drink</label></legend>
+                        <div class="custom-select">
+                            <select id="drinkBreakfastLabel">
+                                <option value="optionDrinkBreakfast1">Coffee</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend><label for="lunchDrinkLabel">Drink</label></legend>
+                        <div class="custom-select">
+                            <select id="lunchDrinkLabel">
+                            <option value="optionDrinkLunch1">Cranberry Juice</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend><label for="dinnerDrinkLabel">Drink</label></legend>
+                        <div class="custom-select">
+                            <select id="dinnerDrinkLabel">
+                            <option value="optionDrinkDinner1">Red Wine</option>
+                            </select>
+                        </div>  
+                    </fieldset>
+                    </div>
+                </div>
+            <div class="checkBox">
+                <div>
+                    <label class="container">I'd like desert, too!
+                        <input type="checkbox"  checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+
+        </div>
+        <div class="footerBox">
+            <div class="buttonSpace1">
+                <button class="Back" type="button">Back</button>
+            </div>
+            <div class="buttonSpace2">
+                <button class="Continue" type="button">Continue</button>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
